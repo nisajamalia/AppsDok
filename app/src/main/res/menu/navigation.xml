@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/dokter"
+        android:icon="@drawable/doctor2"
+        android:title="Doctor" />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map_location"
+        android:title="Maps" />
+
+</menu>

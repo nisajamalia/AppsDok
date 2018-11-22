@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nisa.bismillah_dokter.fragment.fragment_map">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            tools:context="com.nisa.bismillah_dokter.MapsActivity">
+
+        </fragment>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="my location"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/btnlocation"/>
+
+        <EditText
+            android:id="@+id/edtseacrh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:hint="Dimana anda?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</FrameLayout>

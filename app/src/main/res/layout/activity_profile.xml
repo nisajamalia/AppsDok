@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nisa.bismillah_dokter.profile"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/gradient_background"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="260dp">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sign_out"
+                android:id="@+id/out"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:id="@+id/imageC"
+                android:src="@drawable/animasi_muslimah"
+                app:civ_border_color="#000"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nisa Jamalia NH"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/textN"
+                android:layout_marginTop="10sp"
+               android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:id="@+id/cardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt"
+                    android:text="* Dokter Online *"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtdok"
+                    android:text="let's be healthy, live happy"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/cardView"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/pesan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/txtemail"
+                    android:layout_gravity="center"
+                    android:text="fulan@gmail.com"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/lock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/txtpass"
+                android:text="fulan@gmail.com"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Bismillah"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

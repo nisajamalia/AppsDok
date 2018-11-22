@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/birumuda"
+    tools:context="com.nisa.bismillah_dokter.fragment.fragment_home">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="245dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.nisa.bismillah_dokter._sliders.SliderView
+                    android:id="@+id/sliderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_indicator"
+                />
+<!--linear layout gunanya untuk titik dibawahnya gitu kalau di slider-->
+            <LinearLayout
+                android:id="@+id/pagesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/notif"
+                        android:layout_width="130dp"
+                        android:layout_height="135dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/hijaumuda">
+
+                        <ImageView
+                            android:id="@+id/gambar"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/notificationbell" />
+
+                        <TextView
+                            android:id="@+id/nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gambar"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:lines="2"
+                            android:text="Notifikasi" />
+
+                        <TextView
+                            android:id="@+id/idnama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/prof"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="135dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/hijaumuda">
+
+                        <ImageView
+                            android:id="@+id/foto"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="11dp"
+                            android:src="@drawable/avatar"
+                            android:layout_below="@+id/idtext"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/namtex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/foto"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:lines="2"
+                            android:text="Profil" />
+
+                        <TextView
+                            android:id="@+id/idtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/rat"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="135dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/hijaumuda">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/quetion" />
+
+                        <TextView
+                            android:id="@+id/textjudul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:lines="2"
+                            android:text="Persyaratan" />
+
+                        <TextView
+                            android:id="@+id/idresep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="140dp"
+                    android:id="@+id/store"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/shop"
+                        android:layout_width="130dp"
+                        android:layout_height="135dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/hijaumuda">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/store" />
+
+                        <TextView
+                            android:id="@+id/jdl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:lines="2"
+                            android:text="Store Shooping" />
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/artbaca"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/art"
+                        android:layout_width="140dp"
+                        android:layout_height="135dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/hijaumuda">
+
+                        <ImageView
+                            android:id="@+id/artikel"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/articles" />
+
+                        <TextView
+                            android:id="@+id/text_artikel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/artikel"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:lines="2"
+                            android:text="Articles" />
+
+                        <TextView
+                            android:id="@+id/idartikel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="5dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:background="@color/hijaumuda">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_terakhir"-->
+            <!--android:layout_width="85dp"-->
+            <!--android:layout_height="85dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/articles" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/jdl_terakhir"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:lines="2"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@id/img_terakhir"-->
+            <!--android:text="Article" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/id_terakhir"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ID"-->
+            <!--android:visibility="gone" />-->
+
+
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

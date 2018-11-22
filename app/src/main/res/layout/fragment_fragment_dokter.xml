@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/hijaulebihmuda"
+    android:layout_height="match_parent"
+    tools:context="com.nisa.bismillah_dokter.fragment.fragment_dokter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Ltab"
+        android:background="@color/hijaumuda"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Ltab"
+        android:id="@+id/pagerI">
+
+    </android.support.v4.view.ViewPager>
+
+
+    </RelativeLayout>
+</FrameLayout>

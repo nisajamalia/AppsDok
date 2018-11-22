@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bismillah_dokter</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <string name="sd" formatted="false">
+        	1. Langsung mendaftar di tempat Dokter    Online tepatnya di : Bogor,Cileungsi kp.tengah jl.pahlawan as-sunnah2 BlokA no3\n\n
+        2. Maksimal usia 35 tahun \n\n
+        3. Sehat jasmani dan rohani\n\n
+        4. Bisa berbahasa inggris minimal pasif\n\n
+        5. Membawa ijazah dokter\n\n
+        6. sudah mempunyai STR ( Surat Tanda Registrasi )  yang masih berlaku\n\n
+        7. Mempunyai sertifikat BTCLS\n\n
+        8. Berorientasi pada pelyanan\n\n
+
+        </string>
+</resources>

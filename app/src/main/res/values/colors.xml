@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4DB6AC</color>
+    <color name="colorPrimaryDark">#26A69A</color>
+    <color name="colorAccent">#6fc1ba</color>
+    <color name="colormuda">#B2DFDB</color>
+    <color name="colormudabanget">#A7FFEB</color>
+    <color name="colormudapalingbanget">#E0F2F1</color>
+    <color name="hijautua">#66BB6A</color>
+    <color name="hijaubiasa">#81C784</color>
+    <color name="hijaumuda">#A5D6A7</color>
+    <color name="clrtualagi">#1c847a</color>
+    <color name="hijaulebihmuda">#C8E6C9</color>
+    <color name="birutua">#80DEEA</color>
+    <color name="birumuda">#B2EBF2</color>
+</resources>
